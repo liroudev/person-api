@@ -11,6 +11,8 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.OpenApi.Models;
+using PersonAPI.Controllers.Services;
+using PersonAPI.Controllers.Services.Implementations;
 
 namespace PersonAPI
 {
@@ -28,6 +30,7 @@ namespace PersonAPI
         {
 
             services.AddControllers();
+            services.AddScoped<IPersonService,PersonServiceImplementation>();
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "PersonAPI", Version = "v1" });
