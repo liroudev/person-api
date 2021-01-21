@@ -1,8 +1,8 @@
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
-using PersonAPI.Controllers.Model;
 using PersonAPI.Controllers.Services;
+using PersonAPI.Model;
 
 namespace PersonAPI.Controllers
 {

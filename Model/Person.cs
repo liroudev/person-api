@@ -1,4 +1,4 @@
-namespace PersonAPI.Controllers.Model
+namespace PersonAPI.Model
 {
     public class Person
     {
@@ -8,5 +8,6 @@ namespace PersonAPI.Controllers.Model
         public string Adress { get; set; }
         public string Gender { get; set; }
         public string FullName => $"{FirstName} {LastName}";
+
     }
 }

@@ -1,6 +1,6 @@
 using System.Collections.Generic;
 using System.Threading;
-using PersonAPI.Controllers.Model;
+using PersonAPI.Model;
 
 namespace PersonAPI.Controllers.Services.Implementations
 {
