@@ -54,7 +54,7 @@ namespace PersonAPI.Controllers.Services.Implementations
             {
                 Id = IncrementAndGet(),
                 FirstName = "Person Name " + i,
-                LastName = "Person Last Name" + i,
+                LastName = "Person Last Name " + i,
                 Adress = "Some Adress " + i,
                 Gender = i % 2 == 0 ? "Male": "Female"
             };
